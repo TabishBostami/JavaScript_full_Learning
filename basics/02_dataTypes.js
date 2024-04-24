@@ -17,3 +17,4 @@ console.log(typeof(undefined)) //undefined
 console.log(typeof(null)) // object
 
 // for more information or Documentation visit mdn
+// hello how are you
