@@ -12,4 +12,6 @@ let isLogedIn = false
 
 //object
 
-console.log(typeof("Tabish"))
+console.log(typeof("Tabish"))// String
+console.log(typeof(undefined)) //undefined
+console.log(typeof(null)) // object
