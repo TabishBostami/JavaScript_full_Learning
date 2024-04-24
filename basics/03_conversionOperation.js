@@ -41,5 +41,5 @@ console.log("convert ... to String")
 
 let someNumber = 33
 let stringNumber = String(someNumber)
-console.log(typeof stringNumber)
-console.log(stringNumber)
+console.log(typeof stringNumber) // string
+console.log(stringNumber) // 33
