@@ -35,3 +35,9 @@ const myFunction =function(){
 }
 
 console.log(typeof anotherId);
+
+//lets talk about mermories.............
+// STACK AND HEAP 
+
+//Stack(PRIMITIVE), Heap(Non-Primitive) 
+
