@@ -22,3 +22,14 @@ console.log(anotherString)//shBosta
 const newStringOne = "    tabish     ";
 console.log(newStringOne) //    tabish
 console.log(newStringOne.trim()); //tabish
+
+
+const url = "https://tabishbostami.com/tabish%20porfolio";
+console.log(url.replace("%20","-")); //https://tabishbostami.com/tabish-porfolio
+
+console.log(url.includes("tabish")) //true
+console.log(url.includes("danish")) //false
+
+const saparate = "tabish-bostami-is-a-web-developer";
+console.log(saparate.split("-")); //[ 'tabish', 'bostami', 'is', 'a', 'web', 'developer' ]
+console.log(saparate.split("-",3));//[ 'tabish', 'bostami', 'is' ]
