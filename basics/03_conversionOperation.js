@@ -105,3 +105,10 @@ console.log(`a:${a}, b:${b}`);
 // click(Ctrl+ leftClick)
 // https://tc39.es/ecma262/#sec-abstract-operations  
 
+console. log ((3+5)*2/3);
+console. log (5+(4*2)/3);
+console. log(3/(4*2)+3);
+console.log(3+4*(8/2));
+console. log(3+4+(8/2));
+console. log(3+5+(8/2) -2);
+console. log (3+5*(8/2)-2);
