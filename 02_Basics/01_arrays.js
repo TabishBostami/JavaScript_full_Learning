@@ -3,11 +3,11 @@
 const  myArr = [0,1,2,3,4,5,"Tabish"]
 const myArr2 = new Array(1,2,3,4,5)
 
-console.log(myArr2)  //[ 1, 2, 3, 4, 5 ]
-console.log(myArr) // [ 0, 1, 2, 3, 4, 5, 'Tabish' ]
+// console.log(myArr2)  //[ 1, 2, 3, 4, 5 ]
+// console.log(myArr) // [ 0, 1, 2, 3, 4, 5, 'Tabish' ]
 
-console.log(myArr[0]) //0
-console.log(myArr[6]) //Tabish
+// console.log(myArr[0]) //0
+// console.log(myArr[6]) //Tabish
 
 // **********************   Array methods ******************************
 
@@ -58,15 +58,29 @@ const myArr3 = [1,2,3,4,5,6];
 // console.log(myArr3.indexOf(3)); //else it will the index of the element
 
 const newArray = myArr3.join();
-console.log(myArr3);
-console.log(newArray);
-console.log(typeof(newArray))
+// console.log(myArr3);
+// console.log(newArray);
+// console.log(typeof(newArray))
 
 // So we can say that join() method coverts the array into string type 
 
 
-// ******************************  slice and splice *******************************
+// ******************************  slice and splice ******************************
 
+/*It Returns a copy of a section of an array. For both start and end, a negative index can be used to indicate an offset from the end of the array. For example, -2 refers to the second to last element of the array.*/
 
+console.log("A " ,myArr)
+const myn1 = myArr.slice(1,3);
+console.log(myn1)
+console.log("B ", myArr)
 
+// output
+// A  [ 0, 1, 2, 3, 4, 5, 'Tabish' ]
+// [ 1, 2 ]
+// B  [ 0, 1, 2, 3, 4, 5, 'Tabish' ]
+// [ 1, 2, 3 ]
 
+const myn2 = myArr.splice(1, 3)
+console.log("C" ,myArr)
+console.log(myn2)
+ 
