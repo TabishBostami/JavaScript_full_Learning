@@ -24,8 +24,27 @@ if (true) {
 
 if (true) {
   const num = 20;
-  console.log(num);//20
+  // console.log(num);//20
 }
 // console.log(num); //ReferenceError: Cannot access 'num' before initialization
 const num = 1000;
-console.log(num);//1000
+// console.log(num);//1000
+
+// lets see for function
+
+
+console.log(increment(9));//10
+function increment(num){
+  return num+1;
+}
+console.log(increment(9));//10
+
+
+// console.log(numberInc(19))//Cannot access 'numberInc' before initialization
+const numberInc = function(num){
+  return num+1;
+}
+
+console.log(numberInc(19))//20
+
+// so here we conclude that when you write a taditional function than you can access that before declearation but in 2nd fiction numberInc you can't these access these type of function before delcaration.
