@@ -70,15 +70,11 @@ function calculateCartPrice(...num1) {
 }
 // console.log(calculateCartPrice(200,400,233,235))// [ 200, 400, 233, 235 ]
 
-
-
-
 //there one more things which programmers generally do
 
-function calculateCartPrice2(val1,val2,...num1) {
+function calculateCartPrice2(val1, val2, ...num1) {
   return num1;
 }
-
 
 //then lets what will be the output here
 
@@ -86,21 +82,23 @@ function calculateCartPrice2(val1,val2,...num1) {
 
 //here you can see [233,235] only last two values return as a array rest or two are val1 = 200 and val2=400;
 
-
-
 const user = {
-  username : "tabish",
-  price:199
-} 
+  username: "tabish",
+  price: 199,
+};
 
-function handleObject(anyObjct){
-  console.log(`username is ${anyObjct.username} and price is ${anyObjct.price?anyObjct.price:"Not available"}`)
+function handleObject(anyObjct) {
+  console.log(
+    `username is ${anyObjct.username} and price is ${
+      anyObjct.price ? anyObjct.price : "Not available"
+    }`
+  );
 }
 // handleObject(user);
 
-const myNewArray = [200,233,423,244]
+const myNewArray = [200, 233, 423, 244];
 
-function returnSecondVlaue(getArray){
+function returnSecondVlaue(getArray) {
   return getArray[1];
 }
 // console.log(returnSecondVlaue(myNewArray)); //233
