@@ -4,7 +4,7 @@
 
 // for (let index = 0; index < array.length; index++) {
 //   const element = array[index];
-  
+
 // }
 
 // <<<<<<<-------------------------------######--------------------------->>>>>>>>>>>>>>>>
@@ -12,13 +12,16 @@
 // lets take example to print odd and even number to learn to this for loop
 
 // Printing odd and even numbers from 1 to 10
-// for (let number = 1; number <= 10; number++) {  // Loop from 1 to 10
-//   if (number % 2 === 0) {  // Check if the number is divisible by 2 (even)
-//       console.log(number + " is even");
-//   } else {  // If the number is not divisible by 2, it is odd
-//       console.log(number + " is odd");
-//   }
-// }
+for (let number = 1; number <= 10; number++) {
+  // Loop from 1 to 10
+  if (number % 2 === 0) {
+    // Check if the number is divisible by 2 (even)
+    // console.log(number + " is even");
+  } else {
+    // If the number is not divisible by 2, it is odd
+    // console.log(number + " is odd");
+  }
+}
 
 // Explanation:
 // --> for (let number = 1; number <= 10; number++) initializes a loop that runs from 1 to 10.
@@ -33,13 +36,15 @@
 // Nested loops to create a multiplication table
 // here we  print tables of 1 to 10
 
-// for (let i = 1; i <= 10; i++) {  // Outer loop for rows
-//   let row = '';  // Initialize an empty string for each row
-//   for (let j = 1; j <= 10; j++) {  // Inner loop for columns
-//       row += (i * j) + '\t';  // Multiply and append the result to the row string
-//   }
-//   console.log(row);  // Print the row
-// }
+for (let i = 1; i <= 10; i++) {
+  // Outer loop for rows
+  let row = ""; // Initialize an empty string for each row
+  for (let j = 1; j <= 10; j++) {
+    // Inner loop for columns
+    row += i * j + "\t"; // Multiply and append the result to the row string
+  }
+  // console.log(row);  // Print the row
+}
 
 // Explanation:
 
@@ -58,11 +63,11 @@
 //For array
 // Here's a basic example of using a for loop to iterate over an array and print each element:
 
-// const fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry'];
+const fruits = ["apple", "banana", "cherry", "date", "elderberry"];
 
-// for (let i = 0; i < fruits.length; i++) {
-//     console.log(fruits[i]);
-// }
+for (let i = 0; i < fruits.length; i++) {
+  // console.log(fruits[i]);
+}
 
 // Explanation:
 
@@ -70,3 +75,29 @@
 // -->Loop Initialization: for (let i = 0; i < fruits.length; i++) initializes the loop. Here, i is the loop counter, starting at 0 and incrementing by 1 until it reaches the length of the array (fruits.length).
 // -->Accessing Elements: fruits[i] accesses the element at the current index i.
 // -->Printing Elements: console.log(fruits[i]); prints the current element to the console.
+
+// >>>>>>----------------------######-------------<<<<<<<<<<<<<<<<<
+
+//lets learn about how to interrupt any loop or if you skip any interantion while loop is running
+// for this we have learn about //## break
+//##  Continue
+
+for (let index = 1; index <= 20; index++) {
+  if (index == 5) {
+    // console.log("Detected 5");
+    break;
+  }
+  // console.log(index);
+}
+
+// here you can see the when 5 is printed then loop get interrupted and exicution of our loop is finished with break
+
+for (let index = 1; index <= 10; index++) {
+  if (index == 5) {
+    console.log("Detected 5");
+    continue;
+  }
+  console.log(`value of inder ${index}`);
+}
+
+//here you can see that when index value comes to 5 it get dectected but not printed so loop just skiped that because of continue;
