@@ -8,7 +8,7 @@ const randomColor = function () {
   }
   return color;
 };
-//
+
 const start = document.querySelector("#start")
 const stop = document.querySelector("#stop")
 
@@ -30,4 +30,5 @@ stop.addEventListener("click",function(){
   clearInterval(colorChanger)
   colorChanger = null;
 })
+
 
