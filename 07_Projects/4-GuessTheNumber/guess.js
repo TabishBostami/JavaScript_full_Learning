@@ -10,10 +10,10 @@ let num = 10;
     if(num!=0){
       num=num-1;
       const guess = parseInt(document.querySelector("#guessField").value);
-    const guessField = document.querySelector("#guessField");
-    const guesses = document.querySelector(".guesses");
-    const lastResult = document.querySelector(".lastResult");
-    const lowOrHi = document.querySelector(".lowOrHi");
+      const guessField = document.querySelector("#guessField");
+      const guesses = document.querySelector(".guesses");
+      const lastResult = document.querySelector(".lastResult");
+      const lowOrHi = document.querySelector(".lowOrHi");
   
    
       if (guess === answer) {
